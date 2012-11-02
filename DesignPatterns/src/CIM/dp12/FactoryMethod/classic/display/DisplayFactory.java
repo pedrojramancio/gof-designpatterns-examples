@@ -2,18 +2,19 @@ package CIM.dp12.FactoryMethod.classic.display;
 
 public class DisplayFactory {
 
-	public static Display getDisplay(int displayType) throws DisplayTypeException {
+	public static Display getDisplay(DisplayType displayType)
+			throws DisplayTypeException {
 		Display display;
 
-	      if (1 == displayType)
-	         display = new CSVFile();
-	      else if (2 == displayType)
-	         display = new XMLFile();
-	      else if (3 == displayType)
-	         display = new DBFile();
-	      else
-	         throw new DisplayTypeException(); 
-	      return display;
+		if (displayType.equals(DisplayType.CVS))
+			display = new CSVFile();
+		else if (displayType.equals(DisplayType.XML))
+			display = new XMLFile();
+		else if (displayType.equals(DisplayType.BD))
+			display = new DBFile();
+		else
+			throw new DisplayTypeException();
+		return display;
 	}
 
 }
