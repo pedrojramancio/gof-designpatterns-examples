@@ -1,0 +1,7 @@
+package SIM.dp21.Decorator;
+
+public abstract class Tea {  
+   boolean teaIsSteeped; 
+   
+   public abstract void steepTea();
+}
