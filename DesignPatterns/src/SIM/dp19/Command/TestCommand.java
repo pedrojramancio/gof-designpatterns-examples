@@ -22,6 +22,7 @@ class TestCommand {
 		System.out.println(spongeBob.toString());
 
 		spongeStarsOff.execute();
+		bobStarsOff.execute();
 		System.out.println(" ");
 		System.out.println("sponge stars off");
 		System.out.println(jayAndBob.toString());
