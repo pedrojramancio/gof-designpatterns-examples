@@ -52,7 +52,7 @@ public class Costumer {
 
 	// Extract Method
 	private double amountFor(Rental aRental) {
-		int result = 0;
+		double result = 0;
 		// determine amounts for each line
 		switch (aRental.getMovie().getPriceCode()) {
 		case Movie.REGULAR:
