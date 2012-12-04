@@ -50,6 +50,7 @@ public class Costumer {
 		return result;
 	} // end statement()
 
+	// Extract Method
 	private double amountFor(Rental each) {
 		int thisAmount = 0;
 		// determine amounts for each line
