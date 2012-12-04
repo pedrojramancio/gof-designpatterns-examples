@@ -54,9 +54,9 @@ public class Movie {
 		// add bonus for a two days new release rental
 		if ((getPriceCode() == Movie.NEW_RELEASE)
 				&& daysRented > 1)
-			return 1;
+			return 2;
 		else
-			return 0;
+			return 1;
 	}
 
 
