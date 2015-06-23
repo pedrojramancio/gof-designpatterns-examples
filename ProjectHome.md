@@ -1,0 +1,1 @@
+Exemplos de código java dos padrões de projeto clássicos (GOF), baseados no site www.fluffycat.com
